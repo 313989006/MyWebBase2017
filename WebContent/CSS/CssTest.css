@@ -1,0 +1,23 @@
+@CHARSET "UTF-8";
+h1{
+	color: blue;
+	background-color: yellow;
+	font-size: 25px;
+}
+
+p{
+	color: green;
+	background-color:red; 
+}
+.pp{
+	color: blue;
+	background-color: black;
+	font-size:25px;
+	font-family: 隶书;
+}
+p.pt{
+	color: blue;
+	background-color: black;
+	font-size:25px;
+	font-family: 隶书;
+}
