@@ -5,10 +5,10 @@ h1{
 	font-size: 25px;
 }
 
-p{
+/* p{
 	color: green;
 	background-color:red; 
-}
+} */
 .pp{
 	color: blue;
 	background-color: black;
@@ -20,4 +20,36 @@ p.pt{
 	background-color: black;
 	font-size:25px;
 	font-family: 隶书;
+}
+p{
+	font-family: 隶书;
+	/* font-style: italic;
+	font-variant: small-caps;
+	font-weight:900; */
+	/* font-size: 300%; */
+	text-transform: capitalize;
+	/* text-align: right; */
+}
+b{
+	font-size: 20pt;
+	text-decoration: underline;
+	text-decoration: line-through;
+}
+div{
+	background-color: pink;
+	color: green;
+}
+body {
+	background-image: url(" ../HTML/小清新.jpg");
+	background-attachment: scroll;
+	background-position:top;
+	background-size: cover;
+}
+ul ins{
+	font-size: 10px;
+	font-family: 隶书；
+}
+ul li{
+	font-size:xx-small;
+	font-style: italic;
 }
