@@ -1,0 +1,6 @@
+@CHARSET "UTF-8";
+<style type="text/css">
+#jack{
+	position: absolute;left: 50px;right: 100px;top: 100px;width: 200;height: 100px;visibility: visible;z-index: 1
+	</style>
+}

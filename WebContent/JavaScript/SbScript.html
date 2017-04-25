@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../JavaScript/FirstScript.js"></script>
+<script type="text/javascript">
+	 /* function sb() {
+		document.write("我们都有一个家");
+	}  */
+	function diaBox() {
+		//生命变量
+		var temp = 38;
+		//temp = alert("名字叫中国");
+		//temp = confirm("生命在于运动");
+		temp = prompt("您的年龄是？", "90");
+		alert(temp);
+	}
+	function wClose() {
+		window.close();
+	}
+</script>
+</head>
+<!-- <body  onload="sb()"> -->
+<body>
+	<input name="button1" type="button" value="神马" onclick="diaBox()">
+	<a href="javascript:self.close()">关闭窗口</a>
+
+	<input name="button" type="button" value="关闭" onclick="wClose()"></input>
+	
+	<input name="button3" type="button" value="ForInTest" onclick="forIn()"></input>
+</body>
+</html>
