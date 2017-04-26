@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="../../JavaScript/PastaTest.js"></script>
+<title>Insert title here</title>
+<script type="text/javascript">
+	//定义一个构造函数
+	function pasta(grain, width, shape, hasEgg) {
+		this.grain = grain;
+		this.width = width;
+		this.shape = shape;
+		this.hasEgg = hasEgg;
+		this.toString = pastaToString;
+	}
+
+	function pastaToString() {
+		//返回对象的属性
+		return "Grain: " + this.grain + "\n" + "Width : " + this.width + "\n"
+				+ "shape : " + this.shape + "\n" + "Egg? : "
+				+ Boolean(this.hasEgg);
+	}
+	function foodcook() {
+		var fc = new pasta("wheat", 0.5, "circle", true);
+		var fc1 = new pasta("wheat", 0.5, "circle", true);
+		console.info("fc :", fc);
+		console.info("fc1 :", fc1);
+		//使用prototype原型对象添加属性
+		pasta.prototype.md = "maidanglao";
+		//通过下面方式添加属性的话，只有新new出来的fc才有下面的三个属性，expendo属性
+		fc.color = "  yellow star ";
+		fc.drycook = 5;
+		fc.freshcook = 0.8;
+		console.info("fc.md" + fc.md);
+		console.info("fc", fc)
+
+		var chifan = new pasta("miantiao", 3, "fp", true);
+		console.info("chifan : ", chifan);
+
+		pasta.prototype.trim = function(str) {
+			//用正则表达式将前后空格用空字符串替代
+			return str.replace();
+		}
+
+		console.info("fc.color : " + fc.color);
+		var trimColor = fc.trim(fc.color);
+		console.info("fc.color =" + trimColor);
+
+	}
+
+	function Student(name) {
+		this.name = name;
+		this.getName = getName;
+		this.toString = toString;
+	}
+
+	function getName() {
+		//name = shao;
+		return this.name;
+	}
+	function toString() {
+		return "Student = "+ this.name;
+	}
+
+	function Button1_onclick() {
+		var s = new Student("aqin", 25, "asdad");
+		console.debug(s.toString());
+		alert(s.getName());
+		alert(s.name);
+	}
+	function objDemo() {
+		var mobj = new Object();
+		mobj.name = "Jack";
+		mobj.age = 30;
+		mobj.phone = "123456789";
+		
+		mobj["you are shybee!"]= "It is true";
+		mobj[100]= 100;
+		
+		for ( var pp in mobj) {
+			document.write("这个的确  : " + pp + "是 "+ mobj[pp] + "<br/>");
+		}
+		}
+		function withDe(){
+			//不使用with的情况
+			var x,y ;
+			x = Math.cos(3*Math.PI) + Math.sin(Math.LN10);
+			y = Math.tan(14*Math.E);
+			
+			console.info(" x = " + x +",  y = " + y );
+			//使用with语句的方式
+			var m,n;
+			with(Math){
+				m = cos(3*Math.PI) + sin(Math.LN10);
+				n = tan(14*Math.E);
+				console.info(" m = " + m + " , n = " + n );
+			}
+	}
+</script>
+</head>
+<body>
+	<input type="button" value="生" onclick="foodcook()"></input>
+	<input type="button" name="按钮" onclick="Button1_onclick()"></input>
+
+	<input type="button" name="按钮" value="新按钮" onclick="getName()"></input>
+	<input type="button" name="按钮" value="shybee" onclick="objDemo()"></input>
+	<input type="button" name="元" value="xyz" onclick="withDe()"></input>
+</body>
+</html>
