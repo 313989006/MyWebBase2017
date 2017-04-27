@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+	<script>
+	function myFunction() {
+		var x = document.getElementById("fname");
+		x.value = x.value.toUpperCase();
+	}
+	</script>
+
+<body>
+	输入你的名字 : <input type="text" id="fname" onchange="myFunction()">
+	<p> 当鼠标离开输入框后，函数被触发，将小写字母转为大写字母 。</p>
+	
+	<!-- 对事件作出反应 -->
+	<!-- <h1 onclick="this.innerHTML='Java课程教学'">点击此文本</h1>
+	
+	<p>点击按钮执行displayDate()函数。</p>
+	<button onclick="displayDate()">点我</button>
+	
+	<script>
+	function displayDate() {
+		document.getElementById("demo").innerHTML=Date();
+	}
+	</script>
+	<p id = "demo"></p> -->
+</body>
+</html>

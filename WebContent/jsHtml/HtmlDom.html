@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div id ="div1">
+	<p id ="p1"> 这是一个段落</p>
+	<p id ="p2"> 这是另外一个段落</p>
+	</div>
+	<!-- <script>
+	
+	//创建空的p标签
+	var pa = document.createElement("p");
+	var et =prompt("请输入新的数字" , "6543");
+	//创建p标签里的值
+	//var mo = document.createTextNode("这是一个新的段落");
+	var mo = document.createTextNode(et);
+	//把值添加到p标签里
+	pa.appendChild(mo);
+	//找到含有div1属性的节点，赋值给element
+	var element = document.getElementById("div1");
+	//将新建的p标签追加到父节点
+	element.appendChild(pa);
+	
+	</script>
+	使用事件修改背景颜色 
+	<input id= "button" type="button" onclick="document.body.style.backgroundColor='lavender'" value="修改背景颜色"></input> -->
+	
+	
+	<script>
+	//得到父节点初始化给parent
+	var parent =document.getElementById("div1");
+	//得到子节点赋值给child
+	var child =document.getElementById("p1");
+	//创建空的p标签
+	var para = document.createElement("p");
+	//创建标签内容
+	var node = document.createTextNode("这是一个新的段落 .");
+	//把标签内容赋给p标签
+	para.appendChild(node);
+	//用p节点替换父节点
+	parent.replaceChild(para,child);
+	</script>
+</body>
+</html>
