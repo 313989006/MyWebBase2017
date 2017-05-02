@@ -163,10 +163,10 @@ $(function() {
 	$("#btn2").mouseout(function(){
 		$(this).val("mouseout - 已退出");
 	})
-	/*$("#btn").hover(function(){
+	$("#btn").hover(function(){
 		$(this).val("已进入");
 	},function(){
 		$(this).val(" 已退出 ");
 	}
-	)*/
+	)
 })
