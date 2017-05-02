@@ -9,9 +9,103 @@
 <body>
 	<input type="text" id="txt"></input>
 	<button type="button" onclick="get_text()">跑</button>
-	
-	<div> 我是Div</div>
+
+	<div>我是Div</div>
 	<input type="button" value="Div标签选择器" onclick="divSelect()"></input>
+
+	<hr />
+	<ul>
+		<li>Apple</li>
+		<li>Tomato</li>
+		<li>Banana</li>
+		<li>Potato</li>
+		<li>Orange</li>
+		<li>Apple222
+			<p>
+				<span>什么鬼</span>
+			</p>
+		</li>
+	</ul>
+	<input type="button" value="过滤选择器" onclick="firstSelect()"></input>
+
+	<input type="button" value="包含选择器" onclick="containsSelect()"></input>
+
+	<input type="button" value="指定下标的过滤选择器" onclick="indexSelect()"></input>
+
+	<input type="button" value="has按包含过滤选择器" onclick="hasSelect()"></input>
+
+	<br />
+	<p style="display: none; color: blue;">隐藏的段落</p>
+	<input type="button" value="隐藏过滤选择器" onclick="hiddenSelect()"></input>
+
+	<input id="pppe" type="text" class="cls_pppe"></input>
+	<input type="button" value="属性选择器" onclick="classSelect()"></input>
+	<input name="txt" type="text" class="cls_pppe"></input>
+	<input type="button" value="属性选择器" onclick="classSelect()"></input>
+
+	<form id="my_form">
+		<input type="text" />
+		<input type="radio" /> 
+		<input type="radio" checked="checked" /> 
+		<input type="checkbox" /> 
+		<input type="checkbox" checked="checked" />
+	</form>
+	<input type="button" value="表单选择器" onclick="formSelect()"></input>
+	
+	<select id="sel" multiple="multiple">
+		<option value="0">苹果</option>
+		<option value="1" selected="selected">桔子</option>
+		<option value="2">荔枝</option>
+		<option value="3" selected="selected">葡萄</option>
+		<option value="4">香蕉</option>
+	</select>
+	<input type="button" value="表单选择器2" onclick="formSelect2()"></input>
+	
+	<form id="my_form1" action="foo.php"></form>
+	<input type="button" value="attr设置属性" onclick="attrDemo()"></input>
+	
+	<img src="../WebJpg/PG.jpg"/>
+	<input type="button" value="删除属性" onclick="removeSelect()"></input>
+
+	<p id="p01" color="pink"><b>Nice</b></p>
+	<input type="button" value="htmlTextDemo" onclick="htmlTextDemo()"></input>
+	
+	<input type="button" value="cssDemo" onclick="cssDemo()"></input>
+	
+	<p class="foo.bar" ><b>儿童节快乐</b></p>
+	<input type="button" value="添加和删除样式" onclick="AddRemoveClass()"></input>
+	
+	<input type="button" value="appendDemo" onclick="appendDemo()"></input>
+	
+	<div>
+		<p id="p02"><b>break</b></p>
+	</div>
+	<input type="button" value="afterBeforeDemo" onclick="afterBeforeDemo()"></input>
+	<br/>
+	<br/>
+	<p id="p03">
+		<input type="text" /><input type="button" value="Go" onclick="cloneDemo()"></input>
+	</p>
+	
+	<div id="div2">
+	<p id="p04"> 杭  州 </p>
+	</div>
+	<input type="button" value="replaceWithDemo" onclick="replaceWithDemo()"></input>
+	<input type="button" value="wrapDemo" onclick="wrapDemo()"></input>
+	<input type="button" value="wrapInnerDemo" onclick="wrapInnerDemo()"></input>
+	
+	<div id="div3">
+	<ul>
+		<li class="fruit">Apple</li>
+		<li>Tomato</li>
+		<li class="fruit">Banana</li>
+		<li>Potato</li>
+	</ul>
+	</div>
+	<input type="button" value="removeDemo" onclick="removeDemo()"></input>
+	<input type="button" value="emptyDemo" onclick="emptyDemo()"></input>
+	
+
 
 </body>
 </html>
