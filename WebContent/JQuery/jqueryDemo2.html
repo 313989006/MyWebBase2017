@@ -2,9 +2,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<script type="text/javascript" src="jquery-1.10.1.js"></script>  <!-- 注意两者的引入顺序 -->
+<script type="text/javascript" src="jquery-1.10.1.js"></script>
+<!-- 注意两者的引入顺序 -->
 <script type="text/javascript" src="JQueryDemo.js"></script>
-<title>Insert title here</title>
+<title>动画设计</title>
 </head>
 <body>
 	<!-- <script type="text/javascript">
@@ -19,8 +20,24 @@
 			})
 		})
 	</script> -->
-	<input id="btn" type="button" value="点我"/>
-	<input id="username" name="name" type="text"/>
-	<input id="btn2" type="button" value="Demo"/>
+	<input id="btn" type="button" value="点我" />
+	<input id="username" name="name" type="text" />
+	<input id="btn2" type="button" value="Demo" />
+
+
+	<div style="width: 24px; height: 32px; border: 1px solid red;"></div>
+	<button type="button">变大</button>
+	<input style="button" value="变大" onclick="animateDemo()"></input>
+	
+	<hr/>
+	<div id="divDemo" style="width: 200px;height: 200px;background-color: blue;display: none;">
+		<h4>Div动画的啥啥啥</h4>
+	</div>
+	<input type="button" value="showDemo" onclick="showDemo()"></input>
+	<input type="button" value="hideDemo" onclick="hideDemo()"></input>
+	<input type="button" value="toggleDemo" onclick="toggleDemo()"></input>
+	<input type="button" value="slideUpDemo" onclick="slideUpDemo()"></input>
+	<input type="button" value="slideDownDemo" onclick="slideDownDemo()"></input>
+		<input type="button" value="slideToggleDemo" onclick="slideToggleDemo()"></input>
 </body>
 </html>

@@ -88,7 +88,7 @@ function htmlTextDemo() {
 	console.log($("#p03").html());*/
 }
 
-//css()
+//css()，改变样式
 function cssDemo() {
 	//$("p").css("color","red");
 	$("p")[2].style.color="blue";
@@ -170,3 +170,97 @@ $(function() {
 	}
 	)
 })
+
+function showDemo() {
+	//$("#divDemo").show("slow");
+	$("#divDemo").show("slow",function(){
+		alert("噢耶，显示成功!")
+	});
+}
+
+function hideDemo() {
+	//$("#divDemo").hide("slow");
+	$("#divDemo").hide("slow",function(){
+		alert("噢耶，隐藏成功!")
+	});
+}
+
+function toggleDemo() {
+	//$("#divDemo").toggle("slow");
+	$("#divDemo").toggle("slow",function(){
+		if ($("#divDemo")[0].style.display == "block") {
+			alert("噢耶，显示成功!")
+		} else {
+			alert("噢耶，隐藏成功!")
+		}
+	});
+}
+
+//滑动演示，上下
+function slideUpDemo() {
+	//$("#divDemo").slideUp("slow");
+	$("#divDemo").slideUp(3000);
+	/*$("#divDemo").slideUp("slow",function(){
+		alert("噢耶，向上滑动成功!")
+	});*/
+}
+
+function slideDownDemo() {
+	//$("#divDemo").slideDown("slow");
+	$("#divDemo").slideDown(3000);
+	/*$("#divDemo").slideDown("slow",function(){
+		alert("噢耶，向下滑动成功!")
+	});*/
+}
+
+function slideToggleDemo() {
+	//$("#divDemo").slideToggle("slow");
+	//$("#divDemo").slideToggle(3000);
+	$("#divDemo").slideToggle("slow",function(){
+		if ($("#divDemo")[0].style.display == "block") {
+			alert("噢耶，向上滑动成功!")
+		} else {
+			alert("噢耶，向下滑动成功!")
+		}
+	});
+}
+
+
+
+function animateDemo(){
+	$('button').bind('click', function() {
+		$('div').animate({
+			width : '240px',
+			height : '320px'
+		}, 3000);
+	});
+}
+
+
+//练习题 一
+//
+function testDemo1() {
+	//$("#pdd").show("slow");
+	$("#pdd").show(5000,function(){
+		if ($("#pdd")[0].style.display == "block") {
+			//$("#users").attr("value","动画已结束")
+		}
+		else {
+			$("#pdd").hide(5000,function(){
+				$("#users").attr("value","动画已结束")
+		})
+	}
+	})
+}
+
+//练习题二
+//先向右平移，再自己向左平移到原位
+function testDemo2(){
+		$('#td2').animate({
+			left:'+=200px'
+		}, 3000,function(){
+			$('#td2').animate({
+				left:'-=200px'
+			}, 3000);
+		})
+}
