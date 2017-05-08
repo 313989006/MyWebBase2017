@@ -40,8 +40,12 @@ div{
 	color: green;
 }
 body {
-	background-image: url(" ../HTML/小清新.jpg");
-	background-attachment: scroll;
+	background-image: url("../HTML/小清新.jpg");
+	/* background:url("../HTML/小清新.jpg") repeat;
+	 width:100%;
+	 height:100%; */
+	/* background-image: url("../HTML/zhaoxin.jpg"); */
+	background-attachment:scroll;
 	background-position:top;
 	background-size: cover;
 }
@@ -52,4 +56,7 @@ ul ins{
 ul li{
 	font-size:xx-small;
 	font-style: italic;
+}
+div{
+	
 }
